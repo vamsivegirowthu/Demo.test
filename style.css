@@ -4,8 +4,8 @@ body {
   background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') no-repeat center center/cover;
   height: 100vh;
   display: flex;
-  justify-content: center;   /* horizontal center */
-  align-items: center;       /* vertical center */
+  justify-content: center;
+  align-items: center;
 }
 
 /* Dark overlay */
@@ -13,34 +13,24 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.75);
   z-index: -1;
 }
 
-.login-box {
-  background: rgba(0, 0, 0, 0.85);
-  padding: 40px;
-  width: 300px;
-  border-radius: 10px;
+.music-wrapper {
   text-align: center;
   color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  width: 400px;
+  backdrop-filter: blur(8px);
 }
 
-.login-box input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+.song-card {
+  margin-top: 20px;
 }
 
-.login-box button {
-  width: 100%;
-  padding: 10px;
-  background: #1db954; /* Spotify green */
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+.song-card p {
+  margin-bottom: 10px;
 }
