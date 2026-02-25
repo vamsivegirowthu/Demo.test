@@ -1,37 +1,42 @@
 body {
-  font-family: Arial;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769') no-repeat center center/cover;
+  height: 100vh;
 }
 
-nav {
-  background: #222;
-  color: white;
-  padding: 10px;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  padding: 50px;
-  background: #f4f4f4;
-}
-
-section {
+.login-box {
+  background: rgba(0, 0, 0, 0.8);
   padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  color: white;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
